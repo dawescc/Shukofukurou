@@ -3738,7 +3738,7 @@
 				INFOPLIST_FILE = "MAL Library/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.7;
+				MARKETING_VERSION = 3.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3796,7 +3796,7 @@
 				INFOPLIST_FILE = "MAL Library/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.7;
+				MARKETING_VERSION = 3.7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
