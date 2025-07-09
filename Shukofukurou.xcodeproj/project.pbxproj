@@ -80,6 +80,14 @@
 		2DB59D161EB7D4BE00FDC36E /* CocoaOniguruma.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DC64B681EC3D661005A8BCE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC64B671EC3D661005A8BCE /* XMLReader.m */; };
 		2DC64B691EC3D661005A8BCE /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC64B671EC3D661005A8BCE /* XMLReader.m */; };
+		585E380E2E1F150400915787 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585E380D2E1F150400915787 /* AFNetworking.framework */; };
+		585E380F2E1F150400915787 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 585E380D2E1F150400915787 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		585E38102E1F150A00915787 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585E380D2E1F150400915787 /* AFNetworking.framework */; };
+		585E38112E1F150A00915787 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 585E380D2E1F150400915787 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58FDEA242E1F1D03009CA5DF /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5862B31A2D261559000B056A /* Hakuchou.framework */; };
+		58FDEA252E1F1D03009CA5DF /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5862B31A2D261559000B056A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58FDEA262E1F1D0F009CA5DF /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5862B31A2D261559000B056A /* Hakuchou.framework */; };
+		58FDEA272E1F1D0F009CA5DF /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5862B31A2D261559000B056A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		591FC1C321C7E9BD001D8684 /* NSUserNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 591FC1C221C7E9BD001D8684 /* NSUserNotificationManager.m */; };
 		591FC1C421C7E9BD001D8684 /* NSUserNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 591FC1C221C7E9BD001D8684 /* NSUserNotificationManager.m */; };
 		591FC1C521C7E9BD001D8684 /* NSUserNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 591FC1C221C7E9BD001D8684 /* NSUserNotificationManager.m */; };
@@ -240,18 +248,6 @@
 		59CBB2122264F51D007CB65B /* OtherFormatExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBB2102264F51D007CB65B /* OtherFormatExport.m */; };
 		59CBB2132264F51D007CB65B /* OtherFormatExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBB2102264F51D007CB65B /* OtherFormatExport.m */; };
 		59CBB2142264F51D007CB65B /* OtherFormatExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CBB2102264F51D007CB65B /* OtherFormatExport.m */; };
-		59D7C99B223BEA8B0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C99C223BEA8B0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C99D223BEA8B0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C99E223BEA8B0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C99F223BEADD0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C9A0223BEADD0024C31A /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		59D7C9A1223BEAE10024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C9A2223BEAE10024C31A /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		59D7C9A3223BEAE50024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C9A4223BEAE50024C31A /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		59D7C9A5223BEAEA0024C31A /* Hakuchou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; };
-		59D7C9A6223BEAEA0024C31A /* Hakuchou.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59D7C99A223BEA8B0024C31A /* Hakuchou.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59E7B79F2283198700842C4A /* AdvSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5999AF9B22820B3D001FBF85 /* AdvSearchController.xib */; };
 		59E7B7A02283198900842C4A /* AdvSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5999AF9B22820B3D001FBF85 /* AdvSearchController.xib */; };
 		59E7B7A12283198900842C4A /* AdvSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5999AF9B22820B3D001FBF85 /* AdvSearchController.xib */; };
@@ -325,8 +321,6 @@
 		913A117B1E8F206A00450B66 /* AdvancedSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 915E8C421E8C0ACC005A49A4 /* AdvancedSearch.m */; };
 		913A117C1E8F206A00450B66 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91999D101E8C88280026D3E9 /* InfoView.m */; };
 		913A117E1E8F206A00450B66 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
-		913A117F1E8F206A00450B66 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
-		913A11801E8F206A00450B66 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		913A11821E8F206A00450B66 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
 		913A11831E8F206A00450B66 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF21E89844C00F6E9FF /* MASPreferences.framework */; };
 		913A11841E8F206A00450B66 /* PXSourceList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; };
@@ -349,7 +343,6 @@
 		913A119D1E8F206A00450B66 /* SeasonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91999D0C1E8C86A40026D3E9 /* SeasonView.xib */; };
 		913A119E1E8F206A00450B66 /* AdvancedSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915E8C501E8C2362005A49A4 /* AdvancedSearch.xib */; };
 		913A119F1E8F206A00450B66 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916502C61E8C65A500565D30 /* ListView.xib */; };
-		913A11A11E8F206A00450B66 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		913A11A21E8F206A00450B66 /* PXSourceList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		913A11A31E8F206A00450B66 /* MASPreferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		913A11AE1E8F212600450B66 /* MainMenu-AppStore.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913A11AC1E8F212600450B66 /* MainMenu-AppStore.xib */; };
@@ -406,11 +399,8 @@
 		9199BAEB1E89843300F6E9FF /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9199BAE41E89843300F6E9FF /* LoginView.xib */; };
 		9199BAEC1E89843300F6E9FF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9199BAE61E89843300F6E9FF /* MainWindow.xib */; };
 		9199BAED1E89843300F6E9FF /* SoftwareUpdateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9199BAE81E89843300F6E9FF /* SoftwareUpdateView.xib */; };
-		9199BAF11E89844500F6E9FF /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		9199BAF51E89844C00F6E9FF /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF21E89844C00F6E9FF /* MASPreferences.framework */; };
 		9199BAFC1E89847D00F6E9FF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF41E89844C00F6E9FF /* Sparkle.framework */; };
-		9199BAFE1E89847D00F6E9FF /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
-		9199BAFF1E89847D00F6E9FF /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91AECE581E89921200824C2D /* PXSourceList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; };
 		91AECE591E89921200824C2D /* PXSourceList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91AECE5B1E89922A00824C2D /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
@@ -502,9 +492,7 @@
 		91F8E3F0210A46CA007137A7 /* ExportProgressWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F71F0920C7150A00FD5817 /* ExportProgressWindow.m */; };
 		91F8E3F2210A46CA007137A7 /* CocoaOniguruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */; };
 		91F8E3F3210A46CA007137A7 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
-		91F8E3F4210A46CA007137A7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		91F8E3F5210A46CA007137A7 /* DonationCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F84D051F2086720700502379 /* DonationCheck.framework */; };
-		91F8E3F6210A46CA007137A7 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		91F8E3F7210A46CA007137A7 /* CocoaOniguruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */; };
 		91F8E3F8210A46CA007137A7 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF41E89844C00F6E9FF /* Sparkle.framework */; };
 		91F8E3F9210A46CA007137A7 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
@@ -552,7 +540,6 @@
 		91F8E42C210A46CA007137A7 /* SeasonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91999D0C1E8C86A40026D3E9 /* SeasonView.xib */; };
 		91F8E42E210A46CA007137A7 /* AdvancedSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915E8C501E8C2362005A49A4 /* AdvancedSearch.xib */; };
 		91F8E42F210A46CA007137A7 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916502C61E8C65A500565D30 /* ListView.xib */; };
-		91F8E431210A46CA007137A7 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91F8E432210A46CA007137A7 /* SAMKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABAAA92087C33200752627 /* SAMKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91F8E433210A46CA007137A7 /* PXSourceList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		91F8E434210A46CA007137A7 /* MASPreferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -645,9 +632,7 @@
 		F888F455208FB1F500C22C39 /* StreamPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB19DD1EF9D16800420182 /* StreamPopup.m */; };
 		F888F457208FB1F500C22C39 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91999D101E8C88280026D3E9 /* InfoView.m */; };
 		F888F459208FB1F500C22C39 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
-		F888F45A208FB1F500C22C39 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		F888F45B208FB1F500C22C39 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABAAA92087C33200752627 /* SAMKeychain.framework */; };
-		F888F45C208FB1F500C22C39 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; };
 		F888F45D208FB1F500C22C39 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; };
 		F888F45E208FB1F500C22C39 /* CocoaOniguruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */; };
 		F888F45F208FB1F500C22C39 /* MASPreferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF21E89844C00F6E9FF /* MASPreferences.framework */; };
@@ -691,7 +676,6 @@
 		F888F48D208FB1F500C22C39 /* StreamPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E011A1FA3B1D50053A82B /* StreamPopup.xib */; };
 		F888F48E208FB1F500C22C39 /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916502C61E8C65A500565D30 /* ListView.xib */; };
 		F888F490208FB1F500C22C39 /* CocoaOniguruma.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F888F491208FB1F500C22C39 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9199BAF01E89844500F6E9FF /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F888F492208FB1F500C22C39 /* SAMKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8ABAAA92087C33200752627 /* SAMKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F888F493208FB1F500C22C39 /* PXSourceList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9168F9341E89920300CCB5B3 /* PXSourceList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F888F494208FB1F500C22C39 /* MASPreferences.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91AECE5A1E89922A00824C2D /* MASPreferences.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -742,6 +726,83 @@
 			remoteGlobalIDString = 913A115F1E8F206A00450B66;
 			remoteInfo = "MAL Library (AppStore)";
 		};
+		585E37A72E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522391BBF104D00859F49;
+			remoteInfo = "AFNetworking iOS";
+		};
+		585E37A92E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522651BBF129200859F49;
+			remoteInfo = "AFNetworking watchOS";
+		};
+		585E37AB2E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522771BBF136400859F49;
+			remoteInfo = "AFNetworking macOS";
+		};
+		585E37AD2E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0A51BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS";
+		};
+		585E37AF2E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C3B1BC2C79500FD3B3E;
+			remoteInfo = "AFNetworking iOS Tests";
+		};
+		585E37B12E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C4A1BC2C7B200FD3B3E;
+			remoteInfo = "AFNetworking macOS Tests";
+		};
+		585E37B32E1F131500915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS Tests";
+		};
+		585E38122E1F151F00915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 299522761BBF136400859F49;
+			remoteInfo = "AFNetworking macOS";
+		};
+		585E381A2E1F15C800915787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 299522761BBF136400859F49;
+			remoteInfo = "AFNetworking macOS";
+		};
+		5862B3192D261559000B056A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5862B3142D261559000B056A /* Hakuchou.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 590B5E77222D783F0099D056;
+			remoteInfo = Hakuchou;
+		};
+		5862B31B2D261559000B056A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5862B3142D261559000B056A /* Hakuchou.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 590B5E87222D785F0099D056;
+			remoteInfo = "Hakuchou-iOS";
+		};
 		F87EF5632098D22E000AD86E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9199BA8E1E89836000F6E9FF /* Project object */;
@@ -766,8 +827,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2DB59D161EB7D4BE00FDC36E /* CocoaOniguruma.framework in Embed Frameworks */,
-				913A11A11E8F206A00450B66 /* AFNetworking.framework in Embed Frameworks */,
-				59D7C9A2223BEAE10024C31A /* Hakuchou.framework in Embed Frameworks */,
+				585E380F2E1F150400915787 /* AFNetworking.framework in Embed Frameworks */,
+				58FDEA272E1F1D0F009CA5DF /* Hakuchou.framework in Embed Frameworks */,
 				F8ABAAAF2087C33C00752627 /* SAMKeychain.framework in Embed Frameworks */,
 				913A11A21E8F206A00450B66 /* PXSourceList.framework in Embed Frameworks */,
 				599CEFF6220B2CEA0063EBB9 /* SDWebImage.framework in Embed Frameworks */,
@@ -782,14 +843,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9199BAFF1E89847D00F6E9FF /* AFNetworking.framework in Embed Frameworks */,
 				F8ABAAAD2087C33800752627 /* SAMKeychain.framework in Embed Frameworks */,
 				91AECE591E89921200824C2D /* PXSourceList.framework in Embed Frameworks */,
 				9109116E1E89923D00C95E76 /* MASPreferences.framework in Embed Frameworks */,
 				F8ABAAA82087C22600752627 /* DonationCheck.framework in Embed Frameworks */,
 				2DB59D141EB7D4B700FDC36E /* CocoaOniguruma.framework in Embed Frameworks */,
 				599CEFF4220B2CE50063EBB9 /* SDWebImage.framework in Embed Frameworks */,
-				59D7C9A0223BEADD0024C31A /* Hakuchou.framework in Embed Frameworks */,
+				58FDEA252E1F1D03009CA5DF /* Hakuchou.framework in Embed Frameworks */,
+				585E38112E1F150A00915787 /* AFNetworking.framework in Embed Frameworks */,
 				913A115E1E8F200F00450B66 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -801,14 +862,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				91F8E431210A46CA007137A7 /* AFNetworking.framework in Embed Frameworks */,
 				91F8E432210A46CA007137A7 /* SAMKeychain.framework in Embed Frameworks */,
 				91F8E433210A46CA007137A7 /* PXSourceList.framework in Embed Frameworks */,
 				91F8E434210A46CA007137A7 /* MASPreferences.framework in Embed Frameworks */,
 				91F8E435210A46CA007137A7 /* DonationCheck.framework in Embed Frameworks */,
 				91F8E436210A46CA007137A7 /* CocoaOniguruma.framework in Embed Frameworks */,
 				599CEFFA220B2CF30063EBB9 /* SDWebImage.framework in Embed Frameworks */,
-				59D7C9A6223BEAEA0024C31A /* Hakuchou.framework in Embed Frameworks */,
 				91F8E437210A46CA007137A7 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -821,8 +880,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F888F490208FB1F500C22C39 /* CocoaOniguruma.framework in Embed Frameworks */,
-				F888F491208FB1F500C22C39 /* AFNetworking.framework in Embed Frameworks */,
-				59D7C9A4223BEAE50024C31A /* Hakuchou.framework in Embed Frameworks */,
 				F888F492208FB1F500C22C39 /* SAMKeychain.framework in Embed Frameworks */,
 				F888F493208FB1F500C22C39 /* PXSourceList.framework in Embed Frameworks */,
 				599CEFF8220B2CEE0063EBB9 /* SDWebImage.framework in Embed Frameworks */,
@@ -914,6 +971,10 @@
 		2DB59D101EB7D48F00FDC36E /* CocoaOniguruma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaOniguruma.framework; path = "MAL Library/CocoaOniguruma.framework"; sourceTree = "<group>"; };
 		2DC64B661EC3D661005A8BCE /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		2DC64B671EC3D661005A8BCE /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		585E379D2E1F131500915787 /* AFNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFNetworking.xcodeproj; path = "Dependencies/AFNetworking 4/AFNetworking.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		585E380D2E1F150400915787 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5862B3142D261559000B056A /* Hakuchou.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Hakuchou.xcodeproj; path = Dependencies/Hakuchou/Hakuchou.xcodeproj; sourceTree = SOURCE_ROOT; };
+		589280C92E1F0FCB0068866C /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "MAL Library/AFNetworking.framework"; sourceTree = "<group>"; };
 		591FC1BA21C7E5D6001D8684 /* NotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
 		591FC1C121C7E9BD001D8684 /* NSUserNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUserNotificationManager.h; sourceTree = "<group>"; };
 		591FC1C221C7E9BD001D8684 /* NSUserNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserNotificationManager.m; sourceTree = "<group>"; };
@@ -982,7 +1043,6 @@
 		59C4DAD4222438FD001EE490 /* PatreonLicenseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatreonLicenseManager.m; sourceTree = "<group>"; };
 		59CBB20F2264F51D007CB65B /* OtherFormatExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherFormatExport.h; sourceTree = "<group>"; };
 		59CBB2102264F51D007CB65B /* OtherFormatExport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherFormatExport.m; sourceTree = "<group>"; };
-		59D7C99A223BEA8B0024C31A /* Hakuchou.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hakuchou.framework; path = "MAL Library/Hakuchou.framework"; sourceTree = "<group>"; };
 		59E8DDEF1F64C65C00A34A51 /* ClientConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientConstants.h; sourceTree = "<group>"; };
 		59E8DDF01F64C65C00A34A51 /* ClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientConstants.m; sourceTree = "<group>"; };
 		59F08C5C2253B42B00A52539 /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
@@ -1085,7 +1145,6 @@
 		9199BAE51E89843300F6E9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginView.xib; sourceTree = "<group>"; };
 		9199BAE71E89843300F6E9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		9199BAE91E89843300F6E9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SoftwareUpdateView.xib; sourceTree = "<group>"; };
-		9199BAF01E89844500F6E9FF /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
 		9199BAF21E89844C00F6E9FF /* MASPreferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASPreferences.framework; path = "/Users/takanashirikka/Desktop/repo/MAL-Library/MAL Library/MASPreferences.framework"; sourceTree = "<absolute>"; };
 		9199BAF41E89844C00F6E9FF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		9199BB011E8984E300F6E9FF /* PXSourceList.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PXSourceList.framework; path = "/Users/takanashirikka/Desktop/repo/MAL-Library/MAL Library/PXSourceList.framework"; sourceTree = "<absolute>"; };
@@ -1200,19 +1259,17 @@
 			files = (
 				59BADD5D24030E7E0035AA6B /* CloudKit.framework in Frameworks */,
 				913A117E1E8F206A00450B66 /* MASPreferences.framework in Frameworks */,
-				913A117F1E8F206A00450B66 /* AFNetworking.framework in Frameworks */,
 				F8ABAAAB2087C33300752627 /* SAMKeychain.framework in Frameworks */,
-				913A11801E8F206A00450B66 /* AFNetworking.framework in Frameworks */,
 				599CEFF5220B2CEA0063EBB9 /* SDWebImage.framework in Frameworks */,
-				59D7C9A1223BEAE10024C31A /* Hakuchou.framework in Frameworks */,
 				913A11821E8F206A00450B66 /* MASPreferences.framework in Frameworks */,
-				59D7C99C223BEA8B0024C31A /* Hakuchou.framework in Frameworks */,
+				58FDEA262E1F1D0F009CA5DF /* Hakuchou.framework in Frameworks */,
 				2DB59D151EB7D4BE00FDC36E /* CocoaOniguruma.framework in Frameworks */,
 				913A11831E8F206A00450B66 /* MASPreferences.framework in Frameworks */,
 				913A11841E8F206A00450B66 /* PXSourceList.framework in Frameworks */,
 				596EAADF22528D88007C4762 /* AppCenterCrashes.framework in Frameworks */,
 				599CEFF0220B2CDD0063EBB9 /* SDWebImage.framework in Frameworks */,
 				F8ABAAAE2087C33C00752627 /* SAMKeychain.framework in Frameworks */,
+				585E380E2E1F150400915787 /* AFNetworking.framework in Frameworks */,
 				596EAAE522528D88007C4762 /* AppCenterAnalytics.framework in Frameworks */,
 				913A11861E8F206A00450B66 /* PXSourceList.framework in Frameworks */,
 				2DB59D121EB7D48F00FDC36E /* CocoaOniguruma.framework in Frameworks */,
@@ -1230,15 +1287,13 @@
 				596EAAE122528D88007C4762 /* AppCenter.framework in Frameworks */,
 				91AECE5B1E89922A00824C2D /* MASPreferences.framework in Frameworks */,
 				596EAAE422528D88007C4762 /* AppCenterAnalytics.framework in Frameworks */,
-				9199BAF11E89844500F6E9FF /* AFNetworking.framework in Frameworks */,
 				599CEFEF220B2CDD0063EBB9 /* SDWebImage.framework in Frameworks */,
 				F84D05202086720800502379 /* DonationCheck.framework in Frameworks */,
-				59D7C99F223BEADD0024C31A /* Hakuchou.framework in Frameworks */,
 				596EAADE22528D88007C4762 /* AppCenterCrashes.framework in Frameworks */,
-				9199BAFE1E89847D00F6E9FF /* AFNetworking.framework in Frameworks */,
 				2DB59D111EB7D48F00FDC36E /* CocoaOniguruma.framework in Frameworks */,
 				599CEFF3220B2CE50063EBB9 /* SDWebImage.framework in Frameworks */,
 				913A115D1E8F200F00450B66 /* Sparkle.framework in Frameworks */,
+				58FDEA242E1F1D03009CA5DF /* Hakuchou.framework in Frameworks */,
 				9109116D1E89923D00C95E76 /* MASPreferences.framework in Frameworks */,
 				9199BAF51E89844C00F6E9FF /* MASPreferences.framework in Frameworks */,
 				9168F9351E89920300CCB5B3 /* PXSourceList.framework in Frameworks */,
@@ -1246,10 +1301,10 @@
 				9168F9321E8991CB00CCB5B3 /* PXSourceList.framework in Frameworks */,
 				F8ABAAA72087C22600752627 /* DonationCheck.framework in Frameworks */,
 				F8ABAAAA2087C33300752627 /* SAMKeychain.framework in Frameworks */,
-				59D7C99B223BEA8B0024C31A /* Hakuchou.framework in Frameworks */,
 				59BADD5E24030E880035AA6B /* CloudKit.framework in Frameworks */,
 				9199BAFC1E89847D00F6E9FF /* Sparkle.framework in Frameworks */,
 				91AECE581E89921200824C2D /* PXSourceList.framework in Frameworks */,
+				585E38102E1F150A00915787 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1261,12 +1316,9 @@
 				596EAAE322528D88007C4762 /* AppCenter.framework in Frameworks */,
 				91F8E3F3210A46CA007137A7 /* MASPreferences.framework in Frameworks */,
 				596EAAE622528D88007C4762 /* AppCenterAnalytics.framework in Frameworks */,
-				91F8E3F4210A46CA007137A7 /* AFNetworking.framework in Frameworks */,
 				599CEFF2220B2CDD0063EBB9 /* SDWebImage.framework in Frameworks */,
 				91F8E3F5210A46CA007137A7 /* DonationCheck.framework in Frameworks */,
-				59D7C9A5223BEAEA0024C31A /* Hakuchou.framework in Frameworks */,
 				596EAAE022528D88007C4762 /* AppCenterCrashes.framework in Frameworks */,
-				91F8E3F6210A46CA007137A7 /* AFNetworking.framework in Frameworks */,
 				91F8E3F7210A46CA007137A7 /* CocoaOniguruma.framework in Frameworks */,
 				599CEFF9220B2CF30063EBB9 /* SDWebImage.framework in Frameworks */,
 				91F8E3F8210A46CA007137A7 /* Sparkle.framework in Frameworks */,
@@ -1277,7 +1329,6 @@
 				91F8E3FE210A46CA007137A7 /* PXSourceList.framework in Frameworks */,
 				91F8E3FF210A46CA007137A7 /* DonationCheck.framework in Frameworks */,
 				91F8E400210A46CA007137A7 /* SAMKeychain.framework in Frameworks */,
-				59D7C99E223BEA8B0024C31A /* Hakuchou.framework in Frameworks */,
 				59BADD5C24030E530035AA6B /* CloudKit.framework in Frameworks */,
 				91F8E402210A46CA007137A7 /* Sparkle.framework in Frameworks */,
 				91F8E403210A46CA007137A7 /* PXSourceList.framework in Frameworks */,
@@ -1296,12 +1347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F888F459208FB1F500C22C39 /* MASPreferences.framework in Frameworks */,
-				F888F45A208FB1F500C22C39 /* AFNetworking.framework in Frameworks */,
 				F888F45B208FB1F500C22C39 /* SAMKeychain.framework in Frameworks */,
-				59D7C99D223BEA8B0024C31A /* Hakuchou.framework in Frameworks */,
-				F888F45C208FB1F500C22C39 /* AFNetworking.framework in Frameworks */,
 				599CEFF7220B2CEE0063EBB9 /* SDWebImage.framework in Frameworks */,
-				59D7C9A3223BEAE50024C31A /* Hakuchou.framework in Frameworks */,
 				F888F45D208FB1F500C22C39 /* MASPreferences.framework in Frameworks */,
 				F888F45E208FB1F500C22C39 /* CocoaOniguruma.framework in Frameworks */,
 				F888F45F208FB1F500C22C39 /* MASPreferences.framework in Frameworks */,
@@ -1398,6 +1445,38 @@
 				2D96A51D1ECBA94400942B28 /* _English.lproj */,
 			);
 			path = MALLibraryHelp;
+			sourceTree = "<group>";
+		};
+		585E379E2E1F131500915787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				585E37A82E1F131500915787 /* AFNetworking.framework */,
+				585E37AA2E1F131500915787 /* AFNetworking.framework */,
+				585E37AC2E1F131500915787 /* AFNetworking.framework */,
+				585E37AE2E1F131500915787 /* AFNetworking.framework */,
+				585E37B02E1F131500915787 /* AFNetworking iOS Tests.xctest */,
+				585E37B22E1F131500915787 /* AFNetworking macOS Tests.xctest */,
+				585E37B42E1F131500915787 /* AFNetworking tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5862B2FB2D261531000B056A /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				585E379D2E1F131500915787 /* AFNetworking.xcodeproj */,
+				5862B3142D261559000B056A /* Hakuchou.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		5862B3152D261559000B056A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5862B31C2D261559000B056A /* Hakuchou_iOS.framework */,
+				5862B31A2D261559000B056A /* Hakuchou.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		591FC1C021C7E98E001D8684 /* NotificationManagers */ = {
@@ -1683,11 +1762,12 @@
 		918C0D3F1E8A00ED0037898E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				585E380D2E1F150400915787 /* AFNetworking.framework */,
+				589280C92E1F0FCB0068866C /* AFNetworking.framework */,
 				59BADD5B24030E530035AA6B /* CloudKit.framework */,
 				596EAADC22528D87007C4762 /* AppCenter.framework */,
 				596EAADD22528D87007C4762 /* AppCenterAnalytics.framework */,
 				596EAADB22528D87007C4762 /* AppCenterCrashes.framework */,
-				59D7C99A223BEA8B0024C31A /* Hakuchou.framework */,
 				F84D643D2098F877003225F9 /* StoreKit.framework */,
 				F8ABAAA92087C33200752627 /* SAMKeychain.framework */,
 				9199BB011E8984E300F6E9FF /* PXSourceList.framework */,
@@ -1745,6 +1825,7 @@
 		9199BA981E89836000F6E9FF /* MAL Library */ = {
 			isa = PBXGroup;
 			children = (
+				5862B2FB2D261531000B056A /* Dependencies */,
 				2D8A41F71E9AB41600CE52B2 /* AppDelegate.h */,
 				2D8A41F81E9AB41600CE52B2 /* AppDelegate.m */,
 				91044F8B211B23BF00DBEF57 /* AppDelegate+Patreon.h */,
@@ -1786,7 +1867,6 @@
 				91AECE5A1E89922A00824C2D /* MASPreferences.framework */,
 				9168F9341E89920300CCB5B3 /* PXSourceList.framework */,
 				9199BAF41E89844C00F6E9FF /* Sparkle.framework */,
-				9199BAF01E89844500F6E9FF /* AFNetworking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1913,6 +1993,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				585E381B2E1F15C800915787 /* PBXTargetDependency */,
 			);
 			name = "Shukofukurou (AppStore)";
 			productName = "MAL Library";
@@ -1931,6 +2012,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				585E38132E1F151F00915787 /* PBXTargetDependency */,
 			);
 			name = Shukofukurou;
 			productName = "MAL Library";
@@ -2127,6 +2209,16 @@
 			mainGroup = 9199BA8D1E89836000F6E9FF;
 			productRefGroup = 9199BA971E89836000F6E9FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 585E379E2E1F131500915787 /* Products */;
+					ProjectRef = 585E379D2E1F131500915787 /* AFNetworking.xcodeproj */;
+				},
+				{
+					ProductGroup = 5862B3152D261559000B056A /* Products */;
+					ProjectRef = 5862B3142D261559000B056A /* Hakuchou.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9199BA951E89836000F6E9FF /* Shukofukurou */,
@@ -2141,6 +2233,72 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		585E37A82E1F131500915787 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 585E37A72E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37AA2E1F131500915787 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 585E37A92E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37AC2E1F131500915787 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 585E37AB2E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37AE2E1F131500915787 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 585E37AD2E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37B02E1F131500915787 /* AFNetworking iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking iOS Tests.xctest";
+			remoteRef = 585E37AF2E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37B22E1F131500915787 /* AFNetworking macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking macOS Tests.xctest";
+			remoteRef = 585E37B12E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		585E37B42E1F131500915787 /* AFNetworking tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking tvOS Tests.xctest";
+			remoteRef = 585E37B32E1F131500915787 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5862B31A2D261559000B056A /* Hakuchou.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Hakuchou.framework;
+			remoteRef = 5862B3192D261559000B056A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5862B31C2D261559000B056A /* Hakuchou_iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Hakuchou_iOS.framework;
+			remoteRef = 5862B31B2D261559000B056A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D60A11D1E9B322A0034C3AA /* Resources */ = {
@@ -2896,6 +3054,16 @@
 			target = 913A115F1E8F206A00450B66 /* Shukofukurou (AppStore) */;
 			targetProxy = 2D60A1241E9B322B0034C3AA /* PBXContainerItemProxy */;
 		};
+		585E38132E1F151F00915787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking macOS";
+			targetProxy = 585E38122E1F151F00915787 /* PBXContainerItemProxy */;
+		};
+		585E381B2E1F15C800915787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking macOS";
+			targetProxy = 585E381A2E1F15C800915787 /* PBXContainerItemProxy */;
+		};
 		F87EF5642098D22E000AD86E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 913A115F1E8F206A00450B66 /* Shukofukurou (AppStore) */;
@@ -3331,10 +3499,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = "./MAL Library/MAL Library.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20211024;
+				CURRENT_PROJECT_VERSION = 20250709;
 				DEVELOPMENT_TEAM = 9HDZTER525;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3366,12 +3535,13 @@
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
+					"$(PROJECT_DIR)/MAL\\ Library",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "AppStore=true";
 				INFOPLIST_FILE = "$(SRCROOT)/MAL Library/Info-AppStore.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.6.1;
+				MARKETING_VERSION = 3.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = Shukofukurou;
 			};
@@ -3381,10 +3551,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_ENTITLEMENTS = "./MAL Library/MAL Library.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20211024;
+				CURRENT_PROJECT_VERSION = 20250709;
 				DEVELOPMENT_TEAM = 9HDZTER525;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3416,12 +3587,13 @@
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
+					"$(PROJECT_DIR)/MAL\\ Library",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "AppStore=true";
 				INFOPLIST_FILE = "$(SRCROOT)/MAL Library/Info-AppStore.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.6.1;
+				MARKETING_VERSION = 3.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = Shukofukurou;
 			};
@@ -3521,7 +3693,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MAL Library/Shukofukurou.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20211024;
+				CURRENT_PROJECT_VERSION = 20250709;
 				DEVELOPMENT_TEAM = 9HDZTER525;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3560,12 +3732,13 @@
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
+					"$(PROJECT_DIR)/MAL\\ Library",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = "MAL Library/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.6.1;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -3578,7 +3751,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MAL Library/Shukofukurou.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20211024;
+				CURRENT_PROJECT_VERSION = 20250709;
 				DEVELOPMENT_TEAM = 9HDZTER525;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3617,12 +3790,13 @@
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
 					"$(PROJECT_DIR)/MAL\\ Library",
+					"$(PROJECT_DIR)/MAL\\ Library",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = "MAL Library/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 3.6.1;
+				MARKETING_VERSION = 3.7;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.malupdaterosx.shukofukurou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -235,7 +235,7 @@
         return;
     }
     NSDictionary *parameters = @{@"query" : kAniListNextEpisode, @"variables" : @{@"id": titleid}};
-    [sessionmanager POST:@"https://graphql.anilist.co/" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [sessionmanager POST:@"https://graphql.anilist.co/" parameters:parameters headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self.managedObjectContext performBlockAndWait:^{
             NSDictionary *animeinfo = responseObject[@"data"][@"Media"];
             bool finished = [(NSString *)animeinfo[@"status"] isEqualToString:@"FINISHED"] || [(NSString *)animeinfo[@"status"] isEqualToString:@"CANCELLED"];

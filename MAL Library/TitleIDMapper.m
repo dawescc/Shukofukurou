@@ -74,7 +74,7 @@
     }
     NSString *hatourl = @"https://hato.malupdaterosx.moe/api/mappings/mappings/";
     NSDictionary *parameters = @{@"media_type" : mediaType == 0 ? @"anime" : @"manga", @"service" : site, @"title_ids" : titleids};
-    [_manager POST:hatourl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [_manager POST:hatourl parameters:parameters headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (responseObject[@"data"]) {
             for (NSDictionary *mapping in responseObject[@"data"]) {
                 [self.managedObjectContext performBlockAndWait:^{
@@ -98,8 +98,6 @@
             return mapping[@"kitsu_id"];
         case 3: // AniList
             return mapping[@"anilist_id"];
-        case 4:
-            return mapping[@"anidb_id"];
     }
     return nil;
 }
@@ -116,15 +114,12 @@
         case 3:
             site = @"anilist";
             break;
-        case 4:
-            site = @"anidb";
-            break;
         default:
             errorHandler(nil);
             return;
     }
     NSString *hatourl = [NSString stringWithFormat:@"https://hato.malupdaterosx.moe/api/mappings/%@/%@/%@", site, type == 0 ? @"anime" : @"manga" ,titleid];
-    [_manager GET:hatourl parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [_manager GET:hatourl parameters:nil headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (responseObject[@"data"] && responseObject[@"data"] != [NSNull null]) {
             [self.managedObjectContext performBlockAndWait:^{
                 [self saveTitleIDMappings:responseObject[@"data"] withTitleId:titleid forService:service withType:type];
@@ -176,9 +171,6 @@
                 break;
             case 3:
                 predicate = [NSPredicate predicateWithFormat:@"anilist_id == %i AND type == %i", titleid.intValue, type];
-                break;
-            case 4:
-                predicate = [NSPredicate predicateWithFormat:@"anidb_id == %i AND type == %i", titleid.intValue, type];
                 break;
             default:
                 break;
