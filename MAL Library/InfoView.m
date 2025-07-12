@@ -556,7 +556,22 @@
             break;
         }
         case 10: {
-            openurl = [NSURL URLWithString:[NSString stringWithFormat:@"https://aniblogtracker.com/?query=%@&submit=&start=0",[Utility urlEncodeString:_infoviewtitle.stringValue]]];
+            switch ([listservice.sharedInstance getCurrentServiceID]) {
+                case 1:
+                    openurl = [NSURL URLWithString:[NSString stringWithFormat:@"https://aniblogtracker.app/manime.php?aid=%i", self.getSelectedId]];
+                    break;
+                case 2: {
+                    int mappedid = ((NSNumber *)[TitleIDMapper.sharedInstance retrieveTitleIdForService:2 withTitleId:@(self.getSelectedId).stringValue withTargetServiceId:1 withType:0][@"mal_id"]).intValue;
+                    openurl = [NSURL URLWithString:[NSString stringWithFormat:@"https://aniblogtracker.app/manime.php?aid=%i", mappedid]];
+                    break;
+                }
+                case 3:
+                    openurl = [NSURL URLWithString:[NSString stringWithFormat:@"https://aniblogtracker.app/aanime.php?aid=%i", self.getSelectedId]];
+                    break;
+                default:
+                    break;
+            }
+            break;
             break;
         }
         case 11: {
