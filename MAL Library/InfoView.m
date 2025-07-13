@@ -406,10 +406,10 @@
         }
         case 2: {
             if (_type == AnimeType) {
-                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.io/anime/%i",_selectedid]]];
+                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.app/anime/%i",_selectedid]]];
             }
             else {
-                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.io/manga/%i",_selectedid]]];
+                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.app/manga/%i",_selectedid]]];
             }
             break;
         }

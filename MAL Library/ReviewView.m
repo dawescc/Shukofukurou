@@ -144,7 +144,7 @@
                 [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://myanimelist.net/profile/%@",_reviewerusername.stringValue]]];
                 break;
             case 2:
-                 [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.io/users/%@",_profile_username]]];
+                 [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.app/users/%@",_profile_username]]];
                 break;
             case 3:
                 [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://anilist.co/user/%@/",_reviewerusername.stringValue]]];

@@ -253,7 +253,7 @@
 }
 
 - (IBAction)registerKitsu:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://kitsu.io/"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://kitsu.app/"]];
 }
 
 - (IBAction)registerAnilist:(id)sender {

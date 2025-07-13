@@ -239,10 +239,10 @@
         }
         case 2: {
             if (type == AnimeType){
-                shareItems = @[[NSString stringWithFormat:@"Check out %@ out on Kitsu", d[@"title"]], [NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.io/anime/%@", d[@"id"]]]];
+                shareItems = @[[NSString stringWithFormat:@"Check out %@ out on Kitsu", d[@"title"]], [NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.app/anime/%@", d[@"id"]]]];
             }
             else {
-                shareItems = @[[NSString stringWithFormat:@"Check out %@ out on Kitsu", d[@"title"]], [NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.io/manga/%@", d[@"id"]]]];
+                shareItems = @[[NSString stringWithFormat:@"Check out %@ out on Kitsu", d[@"title"]], [NSURL URLWithString:[NSString stringWithFormat:@"https://kitsu.app/manga/%@", d[@"id"]]]];
             }
             break;
         }
