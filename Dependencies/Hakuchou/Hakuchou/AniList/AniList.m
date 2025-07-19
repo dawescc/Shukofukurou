@@ -134,7 +134,25 @@
         }
         
     } failure:^(NSURLSessionTask *operation, NSError *error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+                NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrievelist:userid withArray:tmparray withType:type page:page completion:completionHandler error:errorHandler];
+            });
+        });
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -159,7 +177,25 @@
                 break;
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+                NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                [self searchTitle:searchterm withType:type withCurrentPage:currentpage withSearchOptions:options completion:completionHandler error:errorHandler];
+                    });
+                });
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -169,7 +205,25 @@
     [manager POST:@"https://graphql.anilist.co" parameters:parameters headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completionHandler([AtarashiiAPIListFormatAniList normalizePersonSearchData:responseObject]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+                NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                [self searchPeople:searchterm withType:type completion:completionHandler error:errorHandler];
+                    });
+                });
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -189,7 +243,25 @@
                 break;
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveTitleInfo:titleid withType:type completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -215,7 +287,25 @@
             completionHandler([AtarashiiAPIListFormatAniList AniListReviewstoAtarashii:dataarray withType:type]);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveReviewsForTitle:titleid withType:type withDataArray:dataarray withPageOffset:offset completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -237,7 +327,25 @@
             errorHandler(nil);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveStreamLinksForId:animetitleid completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -374,7 +482,25 @@
             errorHandler(nil);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveProfile:username completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
     
 }
@@ -588,7 +714,25 @@
             errorHandler(nil);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrievecharacters:titleid withCharacterArray:characters withType:type withPageOffset:pageoffset completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -611,7 +755,25 @@
             errorHandler(nil);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrievestaffmembers:titleid withCharacterArray:characters withStaffArray:staffarray withType:type withPageOffset:pageoffset completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -622,7 +784,25 @@
     [manager POST:@"https://graphql.anilist.co" parameters:parameters headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completionHandler([AtarashiiAPIListFormatAniList AniListPersontoAtarashii:responseObject[@"data"][@"Staff"]]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrievePersonDetails:personid completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -633,7 +813,25 @@
     [manager POST:@"https://graphql.anilist.co" parameters:parameters headers:@{} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         completionHandler([AtarashiiAPIListFormatAniList AniListCharactertoAtarashii:responseObject[@"data"][@"Character"]]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveCharacterDetails:characterid completion:completionHandler error:errorHandler];
+    });
+});
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
@@ -682,7 +880,25 @@
         }
         completionHandler([AtarashiiAPIListFormatAniList generateIDArrayWithType:type withIdArray:tmparray]);
     } failure:^(NSURLSessionTask *operation, NSError *error) {
-        errorHandler(error);
+        NSDictionary* errResponse = [NSJSONSerialization JSONObjectWithData:[[[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding]  options:kNilOptions
+                                                                      error:nil];;
+        NSDictionary* errResponseErrorHeaders = ((NSHTTPURLResponse *)error.userInfo[AFNetworkingOperationFailingURLResponseErrorKey]).allHeaderFields;
+        NSLog(@"%@",errResponse);
+        NSLog(@"%@",errResponseErrorHeaders);
+        if (errResponse) {
+            if (((NSNumber *)errResponse[@"errors"][0][@"status"]).intValue == 429) {
+                NSLog(@"Rate limited, waiting %@ sec.", errResponseErrorHeaders[@"retry-after"]);
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                    sleep(((NSNumber *)errResponseErrorHeaders[@"retry-after"]).intValue);
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                [self retrieveTitleIds:userid withArray:tmparray withType:type page:page completion:completionHandler error:errorHandler];
+            });
+        });
+            }
+        }
+        else {
+            errorHandler(error);
+        }
     }];
 }
 
